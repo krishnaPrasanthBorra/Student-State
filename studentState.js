@@ -343,8 +343,8 @@ function endQuiz(message = 'Quiz Submitted!') {
     // Save results to localStorage
     localStorage.setItem('quizResults', JSON.stringify(quizResults));
     
-    // Redirect to results page
-    window.location.href = '/results.html';
+    // Redirect to results page - using relative path for GitHub Pages compatibility
+    window.location.href = 'results.html';
 }
 
 // Calculate quiz score
